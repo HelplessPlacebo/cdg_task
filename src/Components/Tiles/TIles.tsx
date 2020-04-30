@@ -23,7 +23,7 @@ const Tiles : React.FC<TTilesProps> = (props) => {
     let ObjsToCompare : TObjsToCompare = []
 
 if(props.ClickedTiles.length >= 2){
-
+    ObjsToCompare.length > 0 && ObjsToCompare.splice(0,ObjsToCompare.length)
 props.ClickedTiles.map(el => {
        props.TilesData.map(tile=>{
            tile.id === el && ObjsToCompare.push(tile)
